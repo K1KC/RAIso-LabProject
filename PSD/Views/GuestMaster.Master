@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GuestMaster.Master.cs" Inherits="PSD.Views.Navbar.navmaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="nav">
+            <asp:Button ID="bttnHome" runat="server" Text="Home" OnClick="bttnHome_Click" />
+            <asp:Button ID="bttnLogin" runat="server" Text="Login" OnClick="bttnLogin_Click" />
+            <asp:Button ID="bttnRegister" runat="server" Text="Register" OnClick="bttnRegister_Click" />
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="bodyContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

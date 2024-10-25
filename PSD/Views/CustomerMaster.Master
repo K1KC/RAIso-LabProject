@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomerMaster.master.cs" Inherits="PSD.Views.CustomerMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="nav">
+            <asp:Button ID="bttnHome" runat="server" Text="Home" OnClick="bttnHome_Click" />
+            <asp:Button ID="bttnCart" runat="server" Text="Cart" OnClick="bttnCart_Click" />
+            <asp:Button ID="bttnTransaction" runat="server" Text="Transaction" OnClick="bttnTransaction_Click" />
+            <asp:Button ID="bttnUpdateProfile" runat="server" Text="Update_Profile" OnClick="bttnUpdateProfile_Click" />
+            <asp:Button ID="bttnLogout" runat="server" Text="LogOut" OnClick="bttnLogout_Click" />
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
